@@ -1,1 +1,11 @@
 <p>page2 works!</p>
+<button (click) = "clickevent()" type="button" class="btn btn-dark">Dark</button>
+<button #btn (dblclick)="clickevent()" type="button" class="btn btn-dark">Dark2</button>
+
+<p>Vaule in button  is {{btn.innerText}}</p>
+
+<button  (click) = "switch()" type="button" class="btn btn-dark">switch</button>
+
+<div *ngIf = "flip">
+    <p>I am Visible</p>
+</div>
